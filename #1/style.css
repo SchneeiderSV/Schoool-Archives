@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: pink;
+    background: radial-gradient(circle, yellow 0%, blue 100%);
+    text-align: center;
+}
+table{
+    margin: 0 auto;
+}
+h1{
+    margin: 10px;
+}
+img{
+    width: 25%;
+}
+.theisenoriginal a:hover{
+    color: #00FF00;
+}
+#Bebidas{
+    color: yellow;
+}
+
+.theisenoriginal{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;  
+}
+.theisenoriginal a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.theisenoriginal a:hover{
+    border-radius: 10px;
+    background-color:darkmagenta;
+}
+
+button{
+    margin-right: 90px;
+    border: none;
+    border-radius: 18px;
+    height: 30px;
+    width: 90px;
+    border:3px solid black;
+    background: pink;
+    cursor: pointer;
+}
+button:hover{
+    background:palevioletred;
+}
+button:active{
+    background:deepskyblue;
+}
