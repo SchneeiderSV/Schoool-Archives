@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookstore</title>
+</head>
+<body>
+    <div class="container">
+
+        <form method="POST" action="adiciona.php">
+
+            <input type="text" name="titulo" placeholder="Título:" required>
+            <input type="number" name="ano" min="0" max="2023" placeholder="Ano:" required>
+            <input type="text" name="autores" placeholder="Autores:" required>
+            <select name="genero">
+                <option value="1">Técnico</option>
+                <option value="2">Auto-Ajuda</option>
+            </select>
+
+            <input type="submit" name="botao" value="Vai Gustavo">
+
+
+            <a href="list.php">Book_List</a>
+
+
+
+
+        </form>
+
+    </div>
+</body>
+</html>
