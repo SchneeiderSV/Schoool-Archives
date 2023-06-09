@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caixa{
+    width: 50vw;
+    height: 75vh;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box{
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
