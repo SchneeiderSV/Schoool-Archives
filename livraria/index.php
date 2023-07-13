@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['id'])){
-    header("location: formLogin.html");
+        header("location: formLogin.html");
 }
 ?>
 <!DOCTYPE html>
@@ -21,18 +21,15 @@ if(!isset($_SESSION['id'])){
 
     $conexao = new mysqli("localhost","root","","livraria");
     
-    $sql = "SELECT * from livros where id_usuario = {$_SESSION['id']}";
+    $sql = "SELECT * from livros where idUsuario = {$_SESSION['id']}";
 
     if(isset($_GET['genero'])){
         if($_GET['genero']==1){
-            $sql = "SELECT * from livros WHERE genero = 1 and id_usuario
-     = {$_SESSION['id']}";
+            $sql = "SELECT * from livros WHERE genero = 1 and idUsuario = {$_SESSION['id']}";
         }else if($_GET['genero']==2){
-            $sql = "SELECT * from livros WHERE genero = 2 and id_usuario
-     = {$_SESSION['id']}";
+            $sql = "SELECT * from livros WHERE genero = 2 and idUsuario = {$_SESSION['id']}";
         }else{
-            $sql = "SELECT * from livros WHERE id_usuario
-     = {$_SESSION['id']}";
+            $sql = "SELECT * from livros WHERE idUsuario = {$_SESSION['id']}";
         }
     }
 

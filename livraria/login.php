@@ -9,7 +9,7 @@ $resultado = $conexao->query($sql);
 $usuarios = $resultado->fetch_all(MYSQLI_ASSOC);
 
 if(count($usuarios)==0){
-    header("location: formAdicionaUsuario.html");
+    header("location: formLogin.html");
 }else{
     session_start();
     $_SESSION['id'] = $usuarios[0]['id'] ;

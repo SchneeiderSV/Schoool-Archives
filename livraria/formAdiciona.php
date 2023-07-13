@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['id'])){
-    header("location: formLogin.php");
+    header("location: formLogin.html");
 }
 ?>
 <!DOCTYPE html>
